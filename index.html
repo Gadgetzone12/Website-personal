@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GadgetZone - Toko Elektronik</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+    }
+    header {
+      background-color: #2e86de;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #1b4f72;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    aside {
+      width: 25%;
+      padding: 15px;
+      background-color: #e8f0fe;
+    }
+    main {
+      width: 75%;
+      padding: 15px;
+    }
+    footer {
+      background-color: #2e86de;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .marquee {
+      background-color: #ffeb3b;
+      padding: 10px;
+      color: #333;
+      font-weight: bold;
+    }
+    button {
+      background-color: #2e86de;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1b4f72;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GadgetZone</h1>
+    <p>TOKO GadgetZone
+       Elektronik Modern Anda</p>
+  </header>
+
+  <div class="marquee">
+    <marquee>Promo Spesial Minggu Ini! Diskon hingga 50% untuk produk terpilih!</marquee>
+  </div>
+
+  <nav>
+    <a href="produk.html">produk</a> </a>
+    <a href="transaksi.html">Transaksi</a>
+    <a href="tentang.html">Tentang Kami</a>
+  </nav>
+
+  <div class="container">
+    <aside>
+      <h3>Kategori</h3>
+      <ul>
+        <li>Smartphone</li>
+        <li>Laptop</li>
+        </ul>
+    </aside>
+
+    <main>
+      <div class="product">
+        <h2>Smartphone X100</h2>
+        <img src="Screenshot (54).png" alt="Smartphone X100">
+        <p>Smartphone canggih dengan prosesor cepat dan kamera ultra jernih.</p>
+        <a href="transaksi.html"><button>Beli</button></a>
+      </div>
+      <div class="product">
+        <h2>Laptop UltraBook</h2>
+        <img src="Screenshot (55).png" alt="Laptop UltraBook">
+        <p>Laptop ringan dengan performa tinggi untuk kebutuhan profesional.</p>
+        <a href="transaksi.html"><button>Beli</button></a>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 GadgetZone | Kontak: admin@gadgetzone.co.id
+  </footer>
+
+</body>
+</html>
+<!-- TRANSAKSI.HTML -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Transaksi - GadgetZone</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 20px; }
+    h1 { text-align: center; color: #2e86de; }
+    form { max-width: 500px; margin: auto; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, select { width: 100%; padding: 10px; margin-top: 5px; }
+    button { background-color: #2e86de; color: white; padding: 10px; border: none; margin-top: 20px; cursor: pointer; }
+    button:hover { background-color: #1b4f72; }
+  </style>
+</head>
+<body>
+  <h1>Formulir Transaksi</h1>
+  <form>
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="alamat">Alamat:</label>
+    <input type="text" id="alamat" name="alamat" required>
+
+    <label for="produk">Pilih Produk:</label>
+    <select id="produk" name="produk">
+      <option>Smartphone X100</option>
+      <option>Laptop UltraBook</option>
+      <option>Tablet Pro 11</option>
+    </select>
+
+    <label for="jumlah">Jumlah:</label>
+    <input type="number" id="jumlah" name="jumlah" min="1" required>
+
+    <label for="pembayaran">Metode Pembayaran:</label>
+    <select id="pembayaran" name="pembayaran">
+      <option>Transfer Bank</option>
+      <option>COD (Bayar di Tempat)</option>
+      <option>QRIS</option>
+    </select>
+
+    <button type="submit">Kirim</button>
+  </form>
+</body>
+</html>
+
+
+<!-- TENTANG.HTML -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tentang Kami - GadgetZone</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #eef3f7; }
+    .container { max-width: 800px; margin: auto; background: white; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    img { max-width: 150px; border-radius: 10px; float: right; margin-left: 20px; }
+    h1 { color: #2e86de; }
+  </style>
+</head>
+<body>
+</body>
+</html>
